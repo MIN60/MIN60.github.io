@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wave</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/box1.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/waves.css" />
+    <link rel="stylesheet" href="css/bookmarks.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&family=Kdam+Thmor+Pro&family=Nanum+Gothic+Coding:wght@700&family=Poppins:wght@200;300&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div id="boxes">
+      <div id="p1">
+        <div id="box1_user">
+          <p id="date"></p>
+          <p id="time"></p>
+          <p id="username"></p>
+          <p id="poem"></p>
+          <p id="poemDetail"></p>
+        </div>
+        <div id="box_group">
+          <div id="box2_weather">
+            <p id="rocate"></p>
+            <img id="weatherIcon"></p>
+            <p id="nowtemp"></p>
+            <p id="maxmin_temp"></p>
+          </div>
+          <div id="box3_bookmarks">
+            <p id="bookMarkTitle">BookMarks & Search</p>
+            <div id="container">
+              <div class="gooItem">
+                <a href="https://www.google.com/" target="_blank">
+                  <img id="gooImg" src="./img/searchIcon/googleicon.png">
+                </a>
+                <form id="googleForm">
+                  <input id="gooSearch" required type="text" placeholder="Google Search">
+                </form>
+              </div>
+              <div class="gitItem">
+                <a href="https://github.com/" target="_blank">
+                  <img id="gitImg" src="./img/searchIcon/giticon.png">
+                </a>
+                <form id="gitForm">
+                  <input id="gitSearch" required type="text" placeholder="GitHub Search">
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div id="p2">
+        <div id="box4_todo">
+          <form id="todo-form">
+            <p id="todoTitle">TO DO</p>
+            <input id="todoinput" type="text" placeholder="Write a To Do and Press Enter" required/>
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+        <div id="box5">
+          <div class ="waves wave1"></div>
+          <div class ="waves wave2"></div>
+          <div class ="waves wave3"></div>
+          <div class ="waves wave4"></div>
+          <div id = "underwater"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="login">
+      <form id="loginForm">
+        <p id="loginTitle">WELCOME!</p>
+        <input id="logInput" type="text" placeholder="Enter Your Name" required maxlength="12"/>
+      </form>
+
+    </div>
+
+    
+  </body>
+  <script src="js/login.js"></script>
+  <script src="js/box1.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/bookmarks.js"></script>
+</html>
